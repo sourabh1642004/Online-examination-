@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/b4ff4e859b.js" crossorigin="anonymous"></script>
+    <title>QOP</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- //////////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">OPQ</a>
+        </div>
+      </div>
+    </nav>
+    <div class="regForm" id="regs_form">
+      <div class="row">
+        <div class="col-lg-8">
+          <form id="signupform" class="col-lg-6 col-sm-12">
+
+              <label for=""> First Name:</label><br>
+              <input type="text" class="form-control" id="firstNameInput" name="fname" required="true">
+              <div class="error-msg" id="error-first-name"></div>
+              <br>
+
+              <label for=""> Last Name:</label><br>
+              <input type="text" class="form-control" id="lastNameInput" name="lname" required="true">
+              <div class="error-msg" id="error-last-name"></div>
+              <br>
+
+              <label for=""> Email:</label><br>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="femail" required="true">
+              <br>
+
+              <label for="">Confirm Email:</label><br>
+              <input type="email" name="semail" id="semail" required="true" class="form-control">
+              <div class="error-msg" id="error-email"></div>
+              <br>
+
+              <label for=""> Password:</label><br>
+              <input type="password" class="form-control" id="Password1Input" name="password" required="true">
+              <div class="error-msg" id="error-password"></div>
+              <br>
+
+              <label for=""> Confirm Password:</label><br>
+              <input type="password" class="form-control" id="confirmPasswordInput"  name="spassword" required="true"> 
+              <div class="error-msg" id="error-password"></div>
+              <br>
+
+              <select class="form-select" aria-label="Default select example" id="positionSelect" name="selectList" required="true">
+                <option selected>Choose Technology</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+              </select>
+
+              <button type="submit" class="btn col-lg-5" id="submit-btn-form"><a class="nav-link" id="reg-submit-link">Sign Up</a></button>
+                                  <!--<a class="nav-link" href="./welcome.html">Sign Up</a>-->
+              <button class="btn col-lg-5" id="sign-in"><a class="nav-link" href="./login.html" id="reg-signIn-link">Sign In</a></button>
+
+          </form>
+        </div>
+        <div class="dvimg col-lg-4">
+            
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////// -->
+<script src="./js/app.js"></script>
+</body>
+
+</html>

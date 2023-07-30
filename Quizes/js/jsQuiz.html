@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../bootstrap-css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+    <link rel="stylesheet" href="../../css/styleQuiz.css">
+  
+</head>
+<body>
+  <header>
+    <!--Start navbar-->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OPQ</a>
+      
+          <form class="d-flex">
+            <button class="btn" type="submit"><a class="nav-link" href="../../index.html">Log Out</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+      <!--End navbar-->
+    </header>
+    <!--End Header-->
+
+<div class=" container  quiz-body">
+  <div class="row">
+    <div id="questionContainer"   class="col-lg-8">
+        <p id="questions">questions</p>
+   
+        <input type="radio" id='input1' name="classes">
+        <label for='input1' id="answer1">answer1</label>
+     <br>
+        <input type="radio" id='input2' name="classes">
+        <label for='input2' id="answer2">answer2</label>
+    <br>
+        <input type="radio" id='input3' name="classes">
+        <label for='input3' id="answer3">answer3</label>
+    <br>
+        <!--**Next button-->
+        <span>Question:<span id="questionNumber"></span> of 10</span>
+        <button class="btn col-lg-2" type="submit" id="btn-skip" onclick="showNextQuestion()"><a id="nextButton">Skip</a></button>
+        <button class="btn col-lg-2" type="submit" id="btn-next" disabled onclick="showNextQuestion()"><a id="nextButton">Next</a></button>
+    </div>
+    <!--**Timer-->
+      <div class="col-lg-4 counter-container">
+        <div class="counter"  class="timer" >
+        <div><span id="time">03:00</span> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!--**********************************************-->
+
+ <div class="clearfix"></div>
+
+ <!--**********************************************-->
+
+ <!--Start Footer which contains: Contact-us section, location, and all-rights-reserved section-->
+ 
+<!--End Footer-->
+    </div>
+    <script src="../../js/appJsQuiz.js"></script>
+</body>
+</html>

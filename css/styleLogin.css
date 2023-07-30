@@ -1,0 +1,70 @@
+body{
+
+    background-color:  #5e55a5;
+}
+
+
+#loginForm{
+    background-color: white;
+    width: 40%;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid #b0adad;
+    padding: 90px;
+    border-radius: 60px;
+    /* box-shadow: 0px 5px 30px #dcd4d4; */
+}
+h2{
+    color:#5e55a5;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2rem;
+}
+.navbar .navbar-brand{
+    font-size: 70px;
+    color:  white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+    
+ }
+.inputDiv{
+    margin-bottom: 30px!important;
+}
+.btn{
+    position: relative;
+    left: 90px;
+    background-color:#5e55a5;
+    position: relative;
+    left: 100px;
+    top: 30px;
+    color: white;
+    border-radius: 10px;
+}
+@media (max-width:1280px) {
+    #loginForm{
+        width: 70% !important;
+    }
+    .btn{
+        left: 25%;
+        
+    }
+    h2{
+        font-size: 1.5rem;
+}
+    }
+    @media (max-width:992px){
+        .btn{
+            left: unset;
+        }
+    }
+@media (max-width:420px){
+        #loginForm{
+            width: 100% !important;
+            padding: 50px !important;
+        }
+        .inputDiv{
+            margin-bottom: 10px!important;
+            
+        }
+      
+    }

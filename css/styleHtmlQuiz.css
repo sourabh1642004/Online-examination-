@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* *******Header******** */
+.navbar .navbar-brand{
+    font-size: 80px;
+    color:  #010ea5;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.navbar .container-fluid{
+    height: 100px;
+}
+.navbar .navbar-collapse ul{
+    margin: 10px auto;
+    color: black;
+    font-size: 25px;
+}
+.navbar .nav-link{
+    color: black;
+    margin-right: 30px;
+}
+.navbar .btn{
+    padding: 10px 30px;
+    background-color: #010ea5;
+    color:white
+}
+.navbar .btn .nav-link{
+    color:white;
+    margin-right: 0;
+}
+.navbar ul{
+    text-align:center
+}
+/* *********button********** */
+#nextButton{
+    /*display: none;*/
+    text-decoration: none;
+    color:white; 
+}
+
+
+#btn-next{
+    display: none;
+    background-color: #fd7e6d;
+    height: 50px;
+    width:50%;
+    margin-top: 50px;
+    position: absolute;
+     left: 50%;
+   color:white;   
+}
+
+.quiz-body{
+    margin: 150px auto;
+}
+
+.btn-answer-style{
+    height:70px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(47, 58, 143);
+    border-radius: 20px;
+    background-color:rgb(204, 209, 228);
+    
+}
+/* ********p(question)********** */
+#questions{
+    font-size: larger;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: bold; */
+}
+
+/* **********Timer countdown************ */
+.counter{
+    font-size:xx-large;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 210px;
+    width: 206px;
+    text-align: center;
+    padding-top: 70px;
+    float: right;
+    border: 12px double  rgb(47, 58, 143);
+}
+
+/* *******footer******** */
+
+footer{
+    background-color: #040477;
+    color: white;
+}
+footer .container-fluid{
+    height: 100%;
+}
+.footer-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+footer .contact-us{
+    border-right: 1px solid white;
+    padding: 20px;
+}
+.contact-us .icons span{
+    display: block;
+    margin: 15px;
+    cursor: pointer;
+}
+.footer-text{
+    padding-left: 0;
+}
+.footer-text .visit-us{
+    border-bottom: 1px solid;
+    padding: 70px 20px;
+    height: 225px;
+}
+.footer-text .all-rights-reserved{
+    padding: 20px 20px 0 20px;
+}
