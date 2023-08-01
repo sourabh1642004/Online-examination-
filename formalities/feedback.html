@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feedback Form</h1>
+  <form id="feedbackForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="message">Feedback:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <div id="thankYouMessage">Thank you for your feedback!</div>
+
+  <script>
+    const feedbackForm = document.getElementById("feedbackForm");
+    const thankYouMessage = document.getElementById("thankYouMessage");
+
+    feedbackForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Process form data (you can add code to send the data to a server here)
+      const formData = new FormData(feedbackForm);
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const message = formData.get("message");
+
+      // You can perform additional validation on the data here if needed.
+
+      // Display thank you message and hide the form
+      feedbackForm.style.display = "none";
+      thankYouMessage.style.display = "block";
+    });
+  </script>
+</body>
+</html>
